@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 
-const CreateProfessor = () => {
+const CreateStudent = () => {
   const [name, setName] = useState("");
-  const [university, setUniversity] = useState("");
-  const [degree, setDegree] = useState("");
+  const [course, setCourse] = useState("");
+  const [ira, setIra] = useState(0);
 
   const handleSubmit = (event) => {
-    alert(`Nome: ${name} \nUniversidade: ${university}\nTitulação: ${degree}`);
+    alert(`Nome: ${name} \nCurso: ${course}\nIra: ${ira}`);
   };
 
   return (
     <div>
-      <h2> Criar Professor </h2>
+      <h2> Criar Estudante </h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Nome</label>
@@ -24,29 +24,29 @@ const CreateProfessor = () => {
           />
         </div>
         <div className="form-grop">
-          <label>Universidade</label>
+          <label>Curso</label>
           <input
             type="text"
             className="form-contol"
-            value={university ?? ""}
-            name="university"
-            onChange={(event) => setUniversity(event.target.value)}
+            value={course ?? ""}
+            name="course"
+            onChange={(event) => setCourse(event.target.value)}
           />
         </div>
         <div className="form-group">
-          <label>Titulação</label>
+          <label>IRA</label>
           <input
             type="text"
             className="form-contol"
-            value={degree ?? 0}
-            name="degree"
-            onChange={(event) => setDegree(event.target.value)}
+            value={ira ?? 0}
+            name="ira"
+            onChange={(event) => setIra(event.target.value)}
           />
         </div>
         <div className="form-group" style={{ paddingTop: 10 }}>
           <input
             type="submit"
-            value="Criar Professor"
+            value="Criar Estudante"
             className="btn btn-primary"
           />
         </div>
@@ -55,4 +55,4 @@ const CreateProfessor = () => {
   );
 };
 
-export default CreateProfessor;
+export default CreateStudent;
