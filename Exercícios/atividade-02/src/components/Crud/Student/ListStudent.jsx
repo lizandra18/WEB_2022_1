@@ -8,7 +8,19 @@ const ListStudent = () => {
     return students.map((student, i) => {
       return <StudentTableRow student={student} key={i} />;
     });
-  }
+  };
+
+  axios.get('http://localhost:3001/students')
+  .then(
+    (res)=>{
+      this.setState({students:res.data})
+    }
+  )
+  .cath(
+    (error)=>{
+      console.log(error)
+    }
+ )
 
   return (
     <div>

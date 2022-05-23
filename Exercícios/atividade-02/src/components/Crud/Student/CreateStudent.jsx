@@ -9,6 +9,18 @@ const CreateStudent = () => {
     alert(`Nome: ${name} \nCurso: ${course}\nIra: ${ira}`);
   };
 
+  axios.post('http://localhost:3001/students', newStudent)
+  .then(
+    (res)=>{
+      console.log('Student '+res.data._id+' iserido com sucesso.')
+    }
+  )
+  .cath(
+    (error)=>{
+      console.log(error)
+    }
+  )
+
   return (
     <div>
       <h2> Criar Estudante </h2>
