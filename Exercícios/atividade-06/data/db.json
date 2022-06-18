@@ -1,0 +1,42 @@
+{
+    "students": [
+      {
+        "name": "Carla Lizandra da Silva",
+        "course": "Sistemas de Informação",
+        "ira": 7.5,
+        "id": 0
+      },
+      {
+        "id": 1,
+        "name": "Weslley Vieira",
+        "course": "Engenharia de Software",
+        "ira": 6.5
+      },
+      {
+        "name": "Sintia Maria",
+        "course": "Odontologia",
+        "ira": 9.5,
+        "id": 2
+      },
+      {
+        "name": "Lairton Lima",
+        "course": "Educação Física",
+        "ira": "6",
+        "id": 4
+      }
+    ],
+    "professors": [
+      {
+        "name": "Jefferson de Carvalho",
+        "university": "Universidade Federal do Ceará",
+        "degree": "Doutorado",
+        "id": 1
+      },
+      {
+        "id": 2,
+        "name": "Rainara de Carvalho",
+        "university": "Universidade Federal do Ceará",
+        "degree": "Doutorado"
+      }
+    ]
+  }
